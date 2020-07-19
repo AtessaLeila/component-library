@@ -1,0 +1,21 @@
+.form {
+    display: inline-block
+}
+
+.btn {
+    display: inline-block
+}
+
+.button-submit {
+    background-color: #33A0FF;
+    color: white;
+    border: none;
+}
+
+.button-submit-small {
+    padding: 16px 20px;
+}
+
+.button-submit-large {
+    padding: 26px 34px;
+}

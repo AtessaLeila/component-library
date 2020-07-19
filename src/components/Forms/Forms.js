@@ -1,9 +1,10 @@
 import React from 'react';
+import './Forms.css'
 
 
 const Forms = (props) => (
     <form>
-        <label for={props.style}>Email</label>
+        <label className="label" for={props.style}>Email</label>
         <input style={props.style}
             label={props.label}
             placeholder={props.placeholder}
