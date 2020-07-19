@@ -2,8 +2,30 @@ import React from 'react';
 import './Inputbtn.css';
 
 
+const initialFormData = Object.freeze({
+    one: "",
+    two: ""
+});
+
 const Inputbtn = (props) => {
+    const [formData, updateFormData] = React.useState(initialFormData);
+    const handleChange = (e) => {
+        updateFormData({
+            ...formData,
+
+            // Trimming any whitespace
+            [e.target.name]: e.target.value.trim()
+        });
+    };
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(formData);
+        // ... submit to API or something
+    };
+
     let classList = [];
+
+    let label = ['Redeem']
 
     let types = ['submit']
 
@@ -25,15 +47,20 @@ const Inputbtn = (props) => {
                     <input style={props.style}
                         label={props.label}
                         placeholder={props.placeholder}
+                        name={props.name}
+                        onChange={handleChange}
 
                     />
+                    <div className="btn">
+                        <input type="submit" className={classList.join(" ")} onClick={handleSubmit} {...label} />
+                    </div>
                 </form>
             </div>
 
-            <div className="btn">
+            {/* <div className="btn">
 
                 <button className={classList.join(" ")} onSubmit={props.action}>{props.label}</button>
-            </div>
+            </div> */}
         </div>
     )
 

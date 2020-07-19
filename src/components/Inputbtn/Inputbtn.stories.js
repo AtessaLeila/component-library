@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { storiesOf } from '@storybook/react';
 
 
 import Inputbtn from './Inputbtn';
+
 
 const field = {
     border: "3px solid #F1F3F4",
@@ -19,9 +20,9 @@ const field2 = {
     width: "200px",
 }
 
-function onClick() {
-    alert("Click!")
-}
+// function onClick() {
+//     alert("Click!")
+// }
 
 
 
@@ -29,14 +30,17 @@ function onClick() {
 storiesOf('Inputbtn', module)
     .add('One', () =>
         <Inputbtn
+
+
+            name="one"
             type="submit"
             label="Redeem"
             placeholder="Voucher Code"
             style={field}
             small
-            whenClicked={onClick}
 
         />
 
     )
-    .add('Two', () => <Inputbtn type="submit" label="Redeem" placeholder="Voucher Code" style={field2} large whenClicked={onClick} />)
+    .add('Two', () => <Inputbtn name="two" type="submit" label="Redeem" placeholder="Voucher Code" style={field2} large />
+    )
