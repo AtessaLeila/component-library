@@ -64,31 +64,26 @@ const large_fill = {
 storiesOf('Select', module)
     .add('Primary', () => <Select
         label="Primary"
-        placeholder="Select"
         style={select}
+        options={["One", "Two", "Three"]}
     />)
     .add('Medium', () => <Select
         label="Medium"
-        placeholder="Select"
         style={medium}
     />)
     .add('Large', () => <Select
         label="Large"
-        placeholder="Select"
         style={large}
     />)
     .add('Primary Fill', () => <Select
         label="Primary"
-        placeholder="Select"
         style={select_fill}
     />)
     .add('Medium Fill', () => <Select
         label="Medium"
-        placeholder="Select"
         style={medium_fill}
     />)
     .add('Large Fill', () => <Select
         label="Large"
-        placeholder="Select"
         style={large_fill}
     />)
