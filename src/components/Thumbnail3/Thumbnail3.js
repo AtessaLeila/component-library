@@ -1,12 +1,11 @@
 import React from 'react';
-// import './Thumbnail3.css'
 import Background from "./img/macbook.png";
 import Stars from "./img/stars.png";
 import Price from "./img/price.png";
 import styled from 'styled-components';
 
 function Thumbnail3() {
-    var styles0 = {
+    var container = {
         display: 'flex',
         display: 'flex',
         flexDirection: 'column',
@@ -49,13 +48,13 @@ function Thumbnail3() {
 `
 
     return (
-        <Hover className="container" style={styles0}>
-            <div className="square-box" style={styles1}><img src={Background} />
+        <Hover className="container" style={container}>
+            <div style={styles1}><img src={Background} />
             </div>
             <p style={apple}>Apple Macbook Pro</p>
-            <div className="square-box" style={styles2}><img src={Stars} />
+            <div style={styles2}><img src={Stars} />
             </div>
-            <div className="square-box" style={styles3}><img src={Price} />
+            <div style={styles3}><img src={Price} />
             </div>
         </Hover>
     )

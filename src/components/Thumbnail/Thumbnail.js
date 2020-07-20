@@ -4,7 +4,7 @@ import './Thumbnail.css'
 
 const Thumbnail = (props) => (
     <div className="container">
-        <div className="macbook"></div>
+        <div className="macbook1"></div>
         <p className="apple">Apple Macbook Pro</p>
         <div className="stars"></div>
         <div className="price"></div>

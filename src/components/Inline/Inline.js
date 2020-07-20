@@ -6,7 +6,7 @@ import Icon from "./img/label.png";
 import Button from '../Button/Button';
 
 function Inline() {
-    var styles0 = {
+    var container = {
         display: 'flex',
         display: 'flex',
         flexDirection: 'column',
@@ -73,15 +73,15 @@ function Inline() {
 
 
     return (
-        <div className="container" style={styles0}>
-            <div className="square-box" style={label}><img src={Icon} />
+        <div className="container" style={container}>
+            <div style={label}><img src={Icon} />
             </div>
             <h1 style={h1}>Beats Solo2 On Ear Headphones - Black</h1>
-            <div className="square-box" style={styles1}><img src={Background} />
+            <div style={styles1}><img src={Background} />
             </div>
-            <div className="square-box" style={styles2}><img src={Stars} />
+            <div style={styles2}><img src={Stars} />
             </div>
-            <div className="square-box" style={styles3}><img src={Price} />
+            <div style={styles3}><img src={Price} />
             </div>
             <p style={info}>Nunc facilisis sagittis ullamcorper. Proin lectus ipsum,
             gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc

@@ -5,7 +5,7 @@ import Price from "./img/price.png";
 
 
 function Thumbnail4() {
-    var styles0 = {
+    var container = {
         display: 'flex',
         display: 'flex',
         flexDirection: 'column',
@@ -47,14 +47,14 @@ function Thumbnail4() {
 
 
     return (
-        <div className="container" style={styles0}>
-            <div className="square-box" style={styles1}><img src={Background} />
+        <div className="container" style={container}>
+            <div style={styles1}><img src={Background} />
             </div>
             <p style={text}>Beats Solo 2 On Ear</p>
             <p style={text2}>Headphones - Black</p>
-            <div className="square-box" style={styles2}><img src={Stars} />
+            <div style={styles2}><img src={Stars} />
             </div>
-            <div className="square-box" style={styles3}><img src={Price} />
+            <div style={styles3}><img src={Price} />
             </div>
         </div>
     )

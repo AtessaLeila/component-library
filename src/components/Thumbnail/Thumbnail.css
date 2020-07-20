@@ -1,17 +1,17 @@
-.macbook {
+.macbook1 {
     background-image: url("./img/macbook.png");
     background-repeat: no-repeat;
     height: 250px;
     background-position: center;
 }
 
-.macbook:hover {
-    background: url("./img/icons.png") no-repeat center;
+.macbook1:hover {
+    background: url("./img/actions.png") no-repeat center;
     background-color: #F8F8F8;
     width: 180px;
     height: 180px;
     display: inline-block;
-    margin-left: 340px;
+    margin-left: 460px;
     border: 6px solid #e8e8e8;
 
 }
