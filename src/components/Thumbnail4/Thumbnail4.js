@@ -1,11 +1,10 @@
 import React from 'react';
-// import './Thumbnail3.css'
-import Background from "./img/macbook.png";
+import Background from "./img/headphones.png";
 import Stars from "./img/stars.png";
 import Price from "./img/price.png";
-import styled from 'styled-components';
 
-function Thumbnail3() {
+
+function Thumbnail4() {
     var styles0 = {
         display: 'flex',
         display: 'flex',
@@ -25,40 +24,39 @@ function Thumbnail3() {
         height: '100px',
         position: 'absolute',
         top: '70px',
-        left: '300px'
+        left: '200px'
     };
     var styles3 = {
         width: '20px',
         height: '100px',
         position: 'absolute',
         top: '110px',
-        left: '300px'
+        left: '200px'
 
     };
-    var apple = {
+    var text = {
         position: 'absolute',
         top: '20px',
-        left: '300px'
+        left: '200px'
     };
-    const Hover = styled.div`
-	background: #fff;
-	:hover {
-		background: #EDEDED;
-		cursor: pointer;
-	}
-`
+    var text2 = {
+        position: 'absolute',
+        top: '35px',
+        left: '200px'
+    };
+
 
     return (
-        <Hover className="container" style={styles0}>
+        <div className="container" style={styles0}>
             <div className="square-box" style={styles1}><img src={Background} />
             </div>
-            <p style={apple}>Apple Macbook Pro</p>
+            <p style={text}>Beats Solo 2 On Ear</p>
+            <p style={text2}>Headphones - Black</p>
             <div className="square-box" style={styles2}><img src={Stars} />
             </div>
             <div className="square-box" style={styles3}><img src={Price} />
             </div>
-        </Hover>
+        </div>
     )
 }
-export default Thumbnail3
-
+export default Thumbnail4
