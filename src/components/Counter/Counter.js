@@ -1,50 +1,51 @@
-// import React, { useState } from 'react';
+import React, { useState } from 'react';
+const { useReducer } = React;
 
 
 
 
 
 
-// const ButtonStyle = {
-//     color: "#33A0FF",
-//     border: "none"
-// };
-// const CounterStyle = {
-//     display: "inline-block",
-//     backgroundColor: "#EFEFEF",
-//     paddingTop: "8px",
-//     paddingBottom: "9px",
-// };
+const ButtonStyle = {
+    color: "#33A0FF",
+    border: "none"
+};
+const CounterStyle = {
+    display: "inline-block",
+    backgroundColor: "#EFEFEF",
+    paddingTop: "8px",
+    paddingBottom: "9px",
+};
 
-// const Counter = (props) => {
-//     const countState = useState(props.count);
-//     const count = countState[0];
-//     const setCount = countState[1];
-//     return (
-//         <div>
-//             <button style={ButtonStyle} onClick={props.increaseCunt} >-
-//         </button>
-//             <p style={CounterStyle}>{count}</p>
-//             <button style={ButtonStyle} onClick={props.decreaseCount} >+
-//         </button>
-//         </div>
+const initialState = { count: 0 };
 
-//     );
-// };
+const reducer = (state, action) => {
+    switch (action.type) {
+        case "increment":
+            return { count: state.count + 1 };
+        case "decrement":
+            return { count: state.count - 1 };
+        default:
+            throw new Error();
+    }
+};
 
-// increaseCount = () => {
-//     let newCount = 
-//     this.setCount({
-//         count: newCount
-//     })
-// }
-// decreaseCount = () => {
-//     let newCount = props.count - 1;
-//     this.setCount({
-//         count: newCount
-//     })
-// }
-// export default Counter;
+const increment = () => ({ type: "increment" });
+const decrement = () => ({ type: "decrement" });
+
+const Counter = (props) => {
+    const [state, dispatch] = useReducer(reducer, initialState);
+    return (
+        <>
+            <button style={ButtonStyle} onClick={() => dispatch(decrement())}>-</button>
+            <p style={CounterStyle}>{state.count}</p>
+            <button style={ButtonStyle} onClick={() => dispatch(increment())}>+</button>
+        </>
+
+    );
+};
+
+export default Counter;
 
 
 

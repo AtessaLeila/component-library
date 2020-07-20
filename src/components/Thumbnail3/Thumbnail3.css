@@ -1,0 +1,35 @@
+.container{
+
+}
+
+.macbook3 {
+    background-image: url("./img/macbook.png");
+    background-repeat: no-repeat;
+    height: 250px;
+    display: inline-block;
+}
+
+.macbook3:hover {
+  
+
+}
+
+.stars3 {
+    background-image: url("./img/stars.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    display: inline-block;
+    
+}
+
+.price3 {
+    background-image: url("./img/price.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    display: inline-block;
+}
+
+.apple3 {
+    text-align:center;
+}
+

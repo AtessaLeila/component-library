@@ -1,0 +1,35 @@
+.macbook {
+    background-image: url("./img/macbook.png");
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: center;
+}
+
+.macbook:hover {
+    background: url("./img/icons2.png") no-repeat center;
+    background-color: #F8F8F8;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    margin-left: 340px;
+    border: 6px solid #e8e8e8;
+
+}
+
+.stars {
+    background-image: url("./img/stars.png");
+    background-repeat: no-repeat;
+    height: 30px;
+    background-position: center;
+}
+
+.price {
+    background-image: url("./img/price.png");
+    background-repeat: no-repeat;
+    height: 50px;
+    background-position: center;
+}
+
+.apple {
+    text-align: center;
+}

@@ -13,14 +13,12 @@ const Inputbtn = (props) => {
         updateFormData({
             ...formData,
 
-            // Trimming any whitespace
             [e.target.name]: e.target.value.trim()
         });
     };
     const handleSubmit = (e) => {
         e.preventDefault()
         console.log(formData);
-        // ... submit to API or something
     };
 
     let classList = [];
@@ -57,10 +55,7 @@ const Inputbtn = (props) => {
                 </form>
             </div>
 
-            {/* <div className="btn">
 
-                <button className={classList.join(" ")} onSubmit={props.action}>{props.label}</button>
-            </div> */}
         </div>
     )
 
