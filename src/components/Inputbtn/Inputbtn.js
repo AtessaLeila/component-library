@@ -1,6 +1,8 @@
 import React from 'react';
 import './Inputbtn.css';
 
+//console logs the input value
+
 
 const initialFormData = Object.freeze({
     one: "",
