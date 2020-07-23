@@ -3,9 +3,6 @@ const { useReducer } = React;
 
 
 
-
-
-
 const ButtonStyle = {
     color: "#33A0FF",
     border: "none"
@@ -22,9 +19,18 @@ const initialState = { count: 0 };
 const reducer = (state, action) => {
     switch (action.type) {
         case "increment":
-            return { count: state.count + 1 };
+            if (state.count < 10) {
+                return { count: state.count + 1 };
+            } else {
+                return { count: state.count - state.count }
+            }
+
         case "decrement":
-            return { count: state.count - 1 };
+            if (state.count > 0 && state.count < 10) {
+                return { count: state.count - 1 };
+            } else {
+                return { count: state.count - state.count }
+            }
         default:
             throw new Error();
     }

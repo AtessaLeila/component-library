@@ -1,11 +1,11 @@
 import React from 'react';
 import './Button.css'
 
-// This is a functional component - just sent up a little differently as an arrow function!
+
 const Button = (props) => {
     let classList = [];
 
-    let types = ['primary', 'danger', 'success', 'warning', 'default', 'icontext', 'icon']
+    let types = ['primary', 'primaryOne', 'danger', 'dangerOne', 'success', 'successOne', 'warning', 'warningOne', 'default', 'defaultOne', 'icontext', 'icon']
 
     if (types.includes(props.type)) {
         classList.push(`button-${props.type}`)

@@ -3,13 +3,19 @@ button {
     padding: 10px 20px;
 }
 
+.button-primaryOne {
+    background-color: #33A0FF;
+    color: white;
+    border: none;
+}
+
 .button-primary {
     background-color: #33A0FF;
     color: white;
     border: none;
 }
 
-.button-primary:hover {
+.button-primaryOne:hover {
     background-color: #2E90E5;
     color: white;
     border: none;
@@ -23,20 +29,26 @@ button {
 .button-primary-faded {
     background-color: #EAF5FF;
     color:#33A0FF;
+    border: none;
 }
 
 .button-primary-large {
     padding: 18px 35px;
 }
 
-
-.button-danger {
+.button-dangerOne {
     background-color: #FF4858;
     color: white;
     border: none;
 }
 
-.button-danger:hover {
+.button-danger {
+    background-color: #f04957;
+    color: white;
+    border: none;
+}
+
+.button-dangerOne:hover {
     background-color: #F53848;
     color: white;
     border: none;
@@ -63,7 +75,13 @@ button {
     color: white;
     border: none;
 }
-.button-success:hover {
+
+.button-successOne {
+    background-color: #0AD00A;
+    color: white;
+    border: none;
+}
+.button-successOne:hover {
     background-color: #07C107;
     color: white;
     border: none;
@@ -89,7 +107,12 @@ button {
     color: white;
     border: none;
 }
-.button-warning:hover {
+.button-warningOne {
+    background-color: #FFC600;
+    color: white;
+    border: none;
+}
+.button-warningOne:hover {
     background-color: #EBB600;
     color: white;
     border: none;
@@ -115,8 +138,13 @@ button {
     color: white;
     border: none;
 }
+.button-defaultOne {
+    background-color: #22262A;
+    color: white;
+    border: none;
+}
 
-.button-default:hover {
+.button-defaultOne:hover {
     background-color: #13161A;
     color: white;
     border: none;
