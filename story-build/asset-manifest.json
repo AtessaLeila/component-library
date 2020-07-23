@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a6d0ef23.chunk.css",
+    "main.js": "/main.21def7b707ca0c9b54a7.bundle.js",
+    "main.css.map": "/static/css/main.a6d0ef23.chunk.css.map",
+    "main.js.map": "/main.21def7b707ca0c9b54a7.bundle.js.map",
+    "runtime~main.js": "/runtime~main.21def7b707ca0c9b54a7.bundle.js",
+    "runtime~main.js.map": "/runtime~main.21def7b707ca0c9b54a7.bundle.js.map",
+    "vendors~main.js": "/vendors~main.21def7b707ca0c9b54a7.bundle.js",
+    "vendors~main.js.map": "/vendors~main.21def7b707ca0c9b54a7.bundle.js.map",
+    "iframe.html": "/iframe.html",
+    "precache-manifest.ff97bc91e470dcef2ef9469f1983aaeb.js": "/precache-manifest.ff97bc91e470dcef2ef9469f1983aaeb.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/Thumbnail.css": "/static/media/actions.02cad7b6.png",
+    "static/media/Button.css": "/static/media/heart.c307014c.png",
+    "static/media/headphones.png": "/static/media/headphones.176c42bc.png",
+    "static/media/Thumbnail2.css": "/static/media/stars.57ae1cb1.png",
+    "static/media/label.png": "/static/media/label.d487da3a.png",
+    "vendors~main.21def7b707ca0c9b54a7.bundle.js.LICENSE.txt": "/vendors~main.21def7b707ca0c9b54a7.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.21def7b707ca0c9b54a7.bundle.js",
+    "vendors~main.21def7b707ca0c9b54a7.bundle.js",
+    "static/css/main.a6d0ef23.chunk.css",
+    "main.21def7b707ca0c9b54a7.bundle.js"
+  ]
+}

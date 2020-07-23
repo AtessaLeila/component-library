@@ -1,0 +1,363 @@
+button {
+    border-radius: 1px;
+    padding: 10px 20px;
+}
+
+.button-primaryOne {
+    background-color: #33A0FF;
+    color: white;
+    border: none;
+}
+
+.button-primary {
+    background-color: #33A0FF;
+    color: white;
+    border: none;
+}
+
+.button-primaryOne:hover {
+    background-color: #2E90E5;
+    color: white;
+    border: none;
+}
+.button-primary-outline {
+    border: 2px solid #33A0FF;
+    background-color: white;
+    color:#33A0FF;
+}
+
+.button-primary-faded {
+    background-color: #EAF5FF;
+    color:#33A0FF;
+    border: none;
+}
+
+.button-primary-large {
+    padding: 18px 35px;
+}
+
+.button-dangerOne {
+    background-color: #FF4858;
+    color: white;
+    border: none;
+}
+
+.button-danger {
+    background-color: #f04957;
+    color: white;
+    border: none;
+}
+
+.button-dangerOne:hover {
+    background-color: #F53848;
+    color: white;
+    border: none;
+}
+
+.button-danger-outline {
+    border: 2px solid #FF4858;
+    background-color: white;
+    color:#FF4858;
+}
+
+.button-danger-faded {
+    background-color:#FFEBED;
+    color:#FF4858;
+}
+
+.button-danger-large {
+    padding: 18px 35px;
+}
+
+
+.button-success {
+    background-color: #0AD00A;
+    color: white;
+    border: none;
+}
+
+.button-successOne {
+    background-color: #0AD00A;
+    color: white;
+    border: none;
+}
+.button-successOne:hover {
+    background-color: #07C107;
+    color: white;
+    border: none;
+}
+
+.button-success-outline {
+    border: 2px solid #0AD00A;
+    background-color: white;
+    color:#0AD00A;
+}
+
+.button-success-faded {
+    background-color: #E6FAE6;
+    color:#0AD00A;
+}
+
+.button-success-large {
+    padding: 18px 35px;
+}
+
+.button-warning {
+    background-color: #FFC600;
+    color: white;
+    border: none;
+}
+.button-warningOne {
+    background-color: #FFC600;
+    color: white;
+    border: none;
+}
+.button-warningOne:hover {
+    background-color: #EBB600;
+    color: white;
+    border: none;
+}
+
+.button-warning-outline {
+    border: 2px solid #FFC600;
+    background-color: white;
+    color:#FFC600;
+}
+
+.button-warning-faded {
+    background-color: #FFF9E5;
+    color:#FFC600;
+}
+
+.button-warning-large {
+    padding: 18px 35px;
+}
+
+.button-default {
+    background-color: #22262A;
+    color: white;
+    border: none;
+}
+.button-defaultOne {
+    background-color: #22262A;
+    color: white;
+    border: none;
+}
+
+.button-defaultOne:hover {
+    background-color: #13161A;
+    color: white;
+    border: none;
+}
+
+.button-default-outline {
+    border: 2px solid #22262A;
+    background-color: white;
+    color:#22262A;
+}
+
+.button-default-faded {
+    background-color: #EAEBEB;
+    color:#22262A;
+}
+
+.button-default-large {
+    padding: 18px 35px;
+}
+
+.button-icontext-cart {
+    background-color: #EAF5FF;
+    color:#33A0FF;
+    border: none;
+    background-image: url(static/media/cart.8655819c.png);
+    background-repeat: no-repeat;
+    background-position: 15% 50%;
+    padding: 18px 25px 18px 48px;
+}
+
+.button-icontext-heart {
+    background-color: #EAF5FF;
+    color:#33A0FF;
+    border: none;
+    background-image: url(static/media/heart.c307014c.png);
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    padding: 18px 25px 18px 48px;
+}
+
+.button-icon-heart {
+    background-color: #EAF5FF;
+    background-image: url(static/media/heart.c307014c.png);
+    border: none;
+    padding: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.button-icon-cart {
+    background-color: #EAF5FF;
+    background-image: url(static/media/cart.8655819c.png);
+    border: none;
+    padding: 25px 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+.label {
+    color: #22262A
+}
+.form {
+    display: inline-block
+}
+
+.btn {
+    display: inline-block
+}
+
+.button-submit {
+    background-color: #33A0FF;
+    color: white;
+    border: none;
+}
+
+.button-submit-small {
+    padding: 16px 20px;
+}
+
+.button-submit-large {
+    padding: 26px 34px;
+}
+.macbook1 {
+    background-image: url(static/media/macbook.c0a117bc.png);
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: center;
+}
+
+.macbook1:hover {
+    background: url(static/media/actions.02cad7b6.png) no-repeat center;
+    background-color: #F8F8F8;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    margin-left: 450px;
+    border: 6px solid #e8e8e8;
+
+}
+
+.stars {
+    background-image: url(static/media/stars.57ae1cb1.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    background-position: center;
+}
+
+.price {
+    background-image: url(static/media/price.629bc912.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    background-position: center;
+}
+
+.apple {
+    text-align: center;
+}
+.macbook {
+    background-image: url(static/media/macbook.c0a117bc.png);
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: center;
+}
+
+.macbook:hover {
+    background: url(static/media/icons2.76686778.png) no-repeat center;
+    background-color: #F8F8F8;
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    margin-left: 450px;
+    border: 6px solid #e8e8e8;
+
+}
+
+.stars {
+    background-image: url(static/media/stars.57ae1cb1.png);
+    background-repeat: no-repeat;
+    height: 30px;
+    background-position: center;
+}
+
+.price {
+    background-image: url(static/media/price.629bc912.png);
+    background-repeat: no-repeat;
+    height: 50px;
+    background-position: center;
+}
+
+.apple {
+    text-align: center;
+}
+
+/*# sourceMappingURL=main.a6d0ef23.chunk.css.map*/
