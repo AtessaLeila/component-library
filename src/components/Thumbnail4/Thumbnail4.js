@@ -37,7 +37,7 @@ function Thumbnail4() {
     var text = {
         position: 'absolute',
         top: '20px',
-        left: '200px'
+        left: '200px',
     };
     var text2 = {
         position: 'absolute',

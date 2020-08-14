@@ -2,7 +2,7 @@
     background-image: url("./img/macbook.png");
     background-repeat: no-repeat;
     height: 250px;
-    background-position: center;
+    background-position: left;
 }
 
 .macbook1:hover {
@@ -20,16 +20,16 @@
     background-image: url("./img/stars.png");
     background-repeat: no-repeat;
     height: 30px;
-    background-position: center;
+    background-position: left;
 }
 
 .price {
     background-image: url("./img/price.png");
     background-repeat: no-repeat;
     height: 50px;
-    background-position: center;
+    background-position: left;
 }
 
 .apple {
-    text-align: center;
+    text-align: left;
 }

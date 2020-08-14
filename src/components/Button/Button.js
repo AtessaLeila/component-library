@@ -1,5 +1,7 @@
 import React from 'react';
-import './Button.css'
+import './Button.css';
+import './img/cart.png';
+import './img/heart.png';
 
 
 const Button = (props) => {

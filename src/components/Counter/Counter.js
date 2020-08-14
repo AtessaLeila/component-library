@@ -12,6 +12,7 @@ const CounterStyle = {
     backgroundColor: "#EFEFEF",
     paddingTop: "8px",
     paddingBottom: "9px",
+    marginLeft: "-5px"
 };
 
 const initialState = { count: 0 };

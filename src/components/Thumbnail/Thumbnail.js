@@ -1,5 +1,9 @@
 import React from 'react';
-import './Thumbnail.css'
+import './Thumbnail.css';
+import './img/macbook.png';
+import './img/actions.png';
+import './img/stars.png';
+import './img/price.png';
 
 
 const Thumbnail = (props) => (
